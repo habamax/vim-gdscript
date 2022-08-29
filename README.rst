@@ -21,14 +21,13 @@ Additional setup you can have in your ``~./vim/after/gdscript.vim``:
       if exists("$WSLENV")
           job_opts.cwd = "/mnt/c"
       endif
-      g:cmd = cmd
       job_start(cmd, job_opts)
   enddef
 
   # Run last scene
   def RunLast()
       if last_scene_run == ''
-          echom "No scene was run yet!"
+          echomsg "No scene was run yet!"
           return
       endif
       RunScene(last_scene_run)

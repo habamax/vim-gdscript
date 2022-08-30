@@ -49,5 +49,5 @@ enddef
 
 nnoremap <silent><buffer>   ]] <scriptcmd>NextSection(false, v:count1)<CR>
 nnoremap <silent><buffer>   [[ <scriptcmd>NextSection(true, v:count1)<CR>
-xmap <silent><buffer><expr> ]] "\<esc>" .. v:count1 .. ']]m>gv'
-xmap <silent><buffer><expr> [[ "\<esc>" .. v:count1 .. '[[m>gv'
+xmap <buffer><expr> ]] $'<C-\><C-N>{v:count1}]]m>gv'
+xmap <buffer><expr> [[ $'<C-\><C-N>{v:count1}[[m>gv'

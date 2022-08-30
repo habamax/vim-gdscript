@@ -1,6 +1,7 @@
 " Vim syntax file for Godot shading language
 " Language:     gdshader
 " Maintainer:   Maxim Kim <habamax@gmail.com>
+" Website:      https://github.com/habamax/vim-gdscript
 " Filenames:    *.gdshader
 
 if exists("b:current_syntax")

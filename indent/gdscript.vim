@@ -3,6 +3,7 @@ vim9script
 # Vim indent file
 # Language: gdscript (Godot game engine)
 # Maintainer: Maxim Kim <habamax@gmail.com>
+# Website: https://github.com/habamax/vim-gdscript
 # Based on python indent file.
 
 if exists("b:did_indent")

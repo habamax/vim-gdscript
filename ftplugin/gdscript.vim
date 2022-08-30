@@ -3,6 +3,7 @@ vim9script
 # Vim filetype plugin file
 # Language: gdscript (Godot game engine scripting language)
 # Maintainer: Maxim Kim <habamax@gmail.com>
+# Website: https://github.com/habamax/vim-gdscript
 
 if exists("b:did_ftplugin") | finish | endif
 

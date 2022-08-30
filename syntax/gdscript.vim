@@ -1,6 +1,7 @@
 " Vim syntax file for Godot gdscript
 " Language:     gdscript
 " Maintainer:   Maxim Kim <habamax@gmail.com>
+" Website:      https://github.com/habamax/vim-gdscript
 " Filenames:    *.gd
 
 if exists("b:current_syntax")

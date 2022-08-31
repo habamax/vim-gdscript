@@ -8,6 +8,9 @@ if exists("b:current_syntax")
     finish
 endif
 
+let s:keepcpo = &cpo
+set cpo&vim
+
 syn match gdResourceNumber "\<0x\%(_\=\x\)\+\>"
 syn match gdResourceNumber "\<0b\%(_\=[01]\)\+\>"
 syn match gdResourceNumber "\<\d\%(_\=\d\)*\>"
@@ -57,3 +60,6 @@ hi def link gdResourceAttributeName Identifier
 hi def link gdResourceString String
 
 let b:current_syntax = "gdresource"
+
+let &cpo = s:keepcpo
+unlet s:keepcpo

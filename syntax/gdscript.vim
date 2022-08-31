@@ -8,6 +8,9 @@ if exists("b:current_syntax")
     finish
 endif
 
+let s:keepcpo = &cpo
+set cpo&vim
+
 syntax sync maxlines=100
 
 syn keyword gdscriptConditional if else elif match
@@ -97,3 +100,6 @@ hi def link gdscriptTodo Todo
 
 
 let b:current_syntax = "gdscript"
+
+let &cpo = s:keepcpo
+unlet s:keepcpo

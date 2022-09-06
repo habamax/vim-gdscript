@@ -17,11 +17,11 @@ Additional setup you can have in your ``~./vim/after/gdscript.vim``:
 
   # Silently execute OS command
   def Exe(cmd: string)
-      var job_opts = {}
+      var job_opts = {term_finish: "close", term_rows: 15}
       if exists("$WSLENV")
           job_opts.cwd = "/mnt/c"
       endif
-      job_start(cmd, job_opts)
+      botright term_start(cmd, job_opts)
   enddef
 
   # Run last scene

@@ -4,6 +4,7 @@ vim9script
 # Language: Godot shading language
 # Maintainer: Maxim Kim <habamax@gmail.com>
 # Website: https://github.com/habamax/vim-gdscript
+# Last Update: 2025-06-09
 
 if exists("b:did_ftplugin") | finish | endif
 b:did_ftplugin = 1
